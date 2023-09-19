@@ -8,8 +8,8 @@
         "dev": "tsx watch src/server.ts",
         "start": "node dist/server.js",
         "build": "tsc --build",
-        "prisma:migrate": "npx prisma migrate dev",
-        "vercel-build": "npm install && npm run build && npm run prisma:migrate && npm run start"
+        "prisma:migrate:deploy": "npx prisma migrate deploy",
+        "vercel-build": "npm run build && npm run prisma:migrate && npm run start"
     },
     "devDependencies": {
         "@types/bcrypt": "^5.0.0",
