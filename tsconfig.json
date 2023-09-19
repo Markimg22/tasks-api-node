@@ -7,9 +7,10 @@
         "strict": true,
         "skipLibCheck": true,
         "outDir": "dist",
-        "baseUrl": "."
-    },
-    "include": [
-        "./src/**/*"
-    ]
+        "baseUrl": ".",
+        "typeRoots": [
+            "./src/@types",
+            "./node_modules/@types"
+        ]
+    }
 }
